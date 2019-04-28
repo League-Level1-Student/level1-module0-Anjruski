@@ -13,7 +13,7 @@ public static void main(String[] args) {
     rob.setPenWidth(5);
 	rob.setSpeed(50);
 	
-	for (int i = 0; i < 9; i++) {
+	for (int i = 0; i < 20; i++) {
 		
 		Random rand = new Random();
 		String size = "";
