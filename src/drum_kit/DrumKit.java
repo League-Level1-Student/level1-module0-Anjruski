@@ -44,7 +44,7 @@ JF.add(JP);
 		// Eclipse project under "default package".
 
 		// 8. Put the name of your image file in a String variable.
- String Image = "Drummi Boi";
+ String Image = "Drummi boi.jpg";
 		// 9. Edit the next line to use your String variable
 		// drumLabelWithImage = createLabelImage(drumImageString);
 drumLabelWithImage = createLabelImage(Image);
@@ -53,11 +53,11 @@ JP.add(drumLabelWithImage);
 		// 11. Set the layout of the panel to "new GridLayout()"
 JP.setLayout(new GridLayout());
 		// 12. call the pack() method on the frame. Run your program. Do you see
-		// your drum image?
-
+		// your drum image? no
+JF.pack();
 		// 13. add this mouse listener to drumLabelWithImage
-
-		// 18. Add more images to make a drumkit. Remember to add this mouse
+drumLabelWithImage.addMouseListener(this);
+		// 18. Add more images to make a drum kit. Remember to add this mouse
 		// listener to each one.
 
 	}
@@ -65,7 +65,7 @@ JP.setLayout(new GridLayout());
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
 		// the console to see when this is printed.
-
+System.out.println("mouse clicked");
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
 														// that the mouse
 														// clicked on
@@ -75,7 +75,9 @@ JP.setLayout(new GridLayout());
 		// leagueofamazing/code4life.
 
 		// 16. If they clicked on the drumImage...
-
+if (drumClicked == drumLabelWithImage) {
+	playSound("drum.wav");
+}
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
 
