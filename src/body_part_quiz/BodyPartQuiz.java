@@ -83,7 +83,7 @@ else {
 			JOptionPane.showMessageDialog(null, "Sorry, but the name was Leonardo");
 			score--;
 		}
-		JOptionPane.showMessageDialog(null, "You have " + score + " points");
+		JOptionPane.showMessageDialog(null, "You have a total of " + score + " points");
 		// 9. Show them their current score
 
 	}
