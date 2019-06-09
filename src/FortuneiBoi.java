@@ -30,7 +30,7 @@ public class FortuneiBoi implements ActionListener {
 		} else if (rand == 4) {
 			System.out.println("This is only paper, not a crystal ball.");
 		} else {
-			System.out.println("I am not a cookie. ( ͡° ͜ʖ ͡°)");
+			System.out.println("I am not the cookie. ( ͡° ͜ʖ ͡°)");
 		}
 		System.out.println();
 		// TODO Auto-generated method stub
