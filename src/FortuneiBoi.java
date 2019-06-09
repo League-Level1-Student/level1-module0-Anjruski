@@ -22,9 +22,9 @@ public class FortuneiBoi implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		int rand = new Random().nextInt(5);
 		if (rand == 1) {
-			System.out.println("Pick another fortune cookie");
+			System.out.println("Pick another fortune cookie, this one is bad");
 		} else if (rand == 2) {
-			System.out.println("This is filled with things you can't pronounce!");
+			System.out.println("This cookie is filled with things you can't pronounce!");
 		} else if (rand == 3) {
 			System.out.println("life is like a race, every second gets you closer to the finish line.");
 		} else if (rand == 4) {
